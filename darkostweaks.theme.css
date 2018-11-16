@@ -69,9 +69,10 @@
 [class*=homeIcon-] {
   content: '';
   background-image: var(--homeiconback) !important;
-  background-size: 200%;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: top center
+  background-position: top center;
+  background-color: transparent;
 }
 
 .guilds-wrapper .guilds .guild.selected:before {
