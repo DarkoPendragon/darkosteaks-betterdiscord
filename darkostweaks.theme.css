@@ -1,5 +1,5 @@
 //META{"name":"Darkos Tweaks","description":"Some extra tweaks from Darko.","author":"DarkoPendragon","version":"3.2"}*//{}
-@import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkosteaks-betterdiscord@latest/source/theme.css);
+@import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkostweaks-betterdiscord@master/source/theme.css);
 :root {
   --mainback: center/cover no-repeat url(https://images6.alphacoders.com/641/641430.jpg);
   /* Description: Sets the background property of the main background.
