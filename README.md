@@ -11,7 +11,7 @@ This theme auto updates (imports from this GitHub under the source folder).
 # Files
 ## darkostweaks.theme.css
 The original theme with compact space.  
-![normaltheme](https://user-images.githubusercontent.com/28911975/49837660-39f29400-fd75-11e8-81e2-b9e91369ccb4.gif)  
+![Normal Theme Image](_images/normaltheme.gif?raw=true "Title")
 
 ### Features
 * Guild/Private message channels contracts/expand on hover
@@ -23,8 +23,8 @@ The original theme with compact space.
 * GameLibrary/Store is now transparent/custom background
 
 ## darkostweaksmin.theme.class
-The original theme, more lightweight with less none needed elements and less [class*=] searching with a dark theme aesthetic in mind.
-![mintheme](https://user-images.githubusercontent.com/28911975/49837645-2d6e3b80-fd75-11e8-91e7-cf31f41d93a1.gif)  
+The original theme, more lightweight with less none needed elements and less [class*=] searching with a dark theme aesthetic in mind.  
+![Min Theme Image](_images/mintheme.gif?raw=true "Title")
 
 ### Features
 * Member's area expands/contracts on hover
