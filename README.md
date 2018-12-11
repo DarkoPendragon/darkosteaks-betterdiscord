@@ -7,13 +7,11 @@ This theme auto updates (imports from this GitHub under the source folder).
 1) Add the desired theme to the themes folder for BD.
 2) Reload Discord (unless auto reload is on).
 3) Turn it on and enjoy!
-
-# Files
-## darkostweaks.theme.css
+***
+# darkostweaks.theme.css
 The original theme with compact space.  
-![Normal Theme Image](_images/normaltheme.gif?raw=true "Title")
-
-### Features
+![Normal Theme Image](_images/normaltheme.gif?raw=true "Title")  
+## Features
 * Guild/Private message channels contracts/expand on hover
 * Member's area contracts/expands on hover
 * Improved Member's area
@@ -22,11 +20,10 @@ The original theme with compact space.
 * Some light floating animations on some popout's
 * GameLibrary/Store is now transparent/custom background
 
-## darkostweaksmin.theme.class
+# darkostweaksmin.theme.css
 The original theme, more lightweight with less none needed elements and less [class*=] searching with a dark theme aesthetic in mind.  
-![Min Theme Image](_images/mintheme.gif?raw=true "Title")
-
-### Features
+![Min Theme Image](_images/mintheme.gif?raw=true "Title")  
+## Features
 * Member's area expands/contracts on hover
 * Improved Member's area
 * The same neat friend's tab area
