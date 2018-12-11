@@ -1,0 +1,13 @@
+//META{"name":"Darkos Tweaks Mini","description":"Some extra tweaks from Darko. Minified with nothing non needed.","author":"DarkoPendragon","version":"1.0"}*//{}
+@import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkostweaks-betterdiscord@master/source/thememin.css);
+:root {
+  --float-speed: 4s;
+  /* Description: Sets the number of seconds a float animation takes to finish.
+  * Defaut:  4s; */
+  --rootwidth: 600px;
+  /* Description: Sets the width of the root class (when you click on "View Profile").
+  * Defaut:  400px; */
+  --rootheight: 600px;
+  /* Description: Sets the height of the root class (when you click on "View Profile").
+  * Defaut:  600px; */
+}
