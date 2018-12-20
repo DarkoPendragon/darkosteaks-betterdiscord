@@ -174,8 +174,11 @@
 /* END Popouts */
 
 /* Custom Friends Tab */
-.friends-row, .friends-row .avatar-small, .friends-row .da-nameTag, .friends-row .friends-column-status, .friends-row .friends-column .friends-column-actions {
-  transition: all .5s !important;
+.friends-row, .friends-row .avatar-small, .friends-row .da-nameTag,
+.friends-row .friends-column-status,
+.friends-row .da-iconSizeSmall,
+.friends-row .friends-column .friends-column-guilds {
+  transition: all 1s !important;
   overflow: visible !important;
   background-size: cover !important;
 }
@@ -210,14 +213,24 @@
   background-size: cover !important;
   left: 20px !important;
 }
-.friends-row:hover .friends-column-actions .friends-action {
-  padding: 10px;
+.friends-row .friends-column-actions .friends-action {
+  visibility: visible !important;
+  transition: all 1s !important;
+  background-size: 20px 20px !important;
 }
-.friends-row .friends-column-actions .friends-action.friends-action-video-call:hover {
+.friends-row:hover .friends-column-actions .friends-action {
+  width: 50px !important;
+  height: 50px !important;
+  background-size: 35px 35px !important;
+}
+.friends-row:hover .friends-column-actions .friends-action.friends-action-video-call {
   background-color: rgba(100, 255, 230, 0.5) !important
 }
-.friends-row .friends-column-actions .friends-action.friends-action-voice-call:hover {
+.friends-row:hover .friends-column-actions .friends-action.friends-action-voice-call {
   background-color: rgba(0, 255, 40, 0.5) !important
+}
+.friends-row:hover .friends-column-actions .friends-action.friends-action-remove {
+  background-color: rgba(255, 0, 0, 0.8) !important
 }
 /* END Custom Friends Tab */
 
