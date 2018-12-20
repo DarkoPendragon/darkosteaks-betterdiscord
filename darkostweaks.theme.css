@@ -1,5 +1,6 @@
 //META{"name":"Darkos Tweaks Redone","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"4.0"}*//{}
-@import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkostweaks-betterdiscord@master/source/theme.css);
+@import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkostweaks-betterdiscord/source/mainsource.css);
+@import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkostweaks-betterdiscord/source/theme.css);
 :root {
   --mainback: center/cover no-repeat url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/r8K5nG9Pxiyh9wvn6/videoblocks-fire-sparks-from-campfire-over-dark-background-loop_rzdceyytg_thumbnail-full01.png);
   /* Description: Sets the background property of the main background.
