@@ -1,25 +1,28 @@
-//META{"name":"Darkos Tweaks","description":"Some extra tweaks from Darko.","author":"DarkoPendragon","version":"3.2"}*//{}
+//META{"name":"Darkos Tweaks Redone","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"4.0"}*//{}
 @import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkostweaks-betterdiscord@master/source/theme.css);
 :root {
-  --mainback: center/cover no-repeat url(https://images6.alphacoders.com/641/641430.jpg);
+  --mainback: center/cover no-repeat url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/r8K5nG9Pxiyh9wvn6/videoblocks-fire-sparks-from-campfire-over-dark-background-loop_rzdceyytg_thumbnail-full01.png);
   /* Description: Sets the background property of the main background.
-  * Defaut:  center/cover no-repeat url(https://images6.alphacoders.com/641/641430.jpg); */
-
-  --dropback: center/cover no-repeat url(https://images6.alphacoders.com/641/641430.jpg);
-  /* Description: Sets the background property of the dropback background.
-  * Defaut:  center/cover no-repeat url(https://images6.alphacoders.com/641/641430.jpg); */
-
-  --dropback-opacity: 0.8;
-  /* Description: Sets the opacity property of the dropback background.
-  * Defaut:  0.8; */
-
-  --homeiconback: center/cover no-repeat url(https://thumbs.gfycat.com/MeaslyRecentHypsilophodon-small.gif);
-  /* Description: Sets the background property of the Friends icon (top left).
-  * Defaut:  url(https://thumbs.gfycat.com/MeaslyRecentHypsilophodon-small.gif); */
+  * Defaut:  rgb(51, 51, 51); */
 
   --userpop: url(https://i.pinimg.com/originals/79/d7/45/79d7453086a0fad67d5da6cecb165250.gif);
   /* Description: Sets the background property of the user popout (e.g when you click on someones avi in chat).
   * Defaut:  url(https://i.pinimg.com/originals/79/d7/45/79d7453086a0fad67d5da6cecb165250.gif); */
+
+  --primarycolor: #99aab5;
+  --secondarycolor: #7289da;
+
+  --friendshover: rgba(114, 137, 218, .5);
+  /* This sets the background property when hovering over friends in the friends tab.
+   * Default: rgba(114, 137, 218, .5); */
+
+  --tagcolor: #fff;
+  /* Description: Sets the text color for bot tags.
+  * Defaut: #fff; */
+
+  --tagbackground: #bce0ff;
+  /* Description: Sets the background color for bot tags.
+  * Defaut: #fff; */
 
   --float-speed: 4s;
   /* Description: Sets the number of seconds a float animation takes to finish.
@@ -32,4 +35,25 @@
   --rootheight: 600px;
   /* Description: Sets the height of the root class (when you click on "View Profile").
   * Defaut:  600px; */
+
+  --embedback: rgba(114, 137, 218, .7);
+  /* Sets background value for innerEmbeds (Message Embeds).
+  * Defaut:  rgba(114, 137, 218, .4); */
+
+  --textborderrad: 0px 0px 0px 0px;
+  /* Sets background value of the border-radius for the text area (sending texts).
+  * Defaut:  0px 0px 0px 0px; */
+
+  --catname: #d3faff;
+  /* Name of catagories when not collapsed.
+   * Default: #d3faff; */
+
+   --catnamecollapsed: black;
+   /* Name of catagories when collapsed.
+    * Default: black; */
+
+  --generalborders: 1px solid rgba(114, 137, 218, .2);
+  /* This is the blue borders you'll see around discord inbetween channels, the text area and the memebrs list.
+   * Setting this to 0 will disable them.
+   * Default: 1px solid rgba(114, 137, 218, .2); */
 }
