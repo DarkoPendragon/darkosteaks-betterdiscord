@@ -1,39 +1,44 @@
 //META{"name":"Darkos Tweaks Redone","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"4.0"}*//{}
-@import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkostweaks-betterdiscord@master/source/theme.css);
+@import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkostweaks-betterdiscord@master/source/mainsource.css);
 :root {
   --mainback: center/cover no-repeat url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/r8K5nG9Pxiyh9wvn6/videoblocks-fire-sparks-from-campfire-over-dark-background-loop_rzdceyytg_thumbnail-full01.png);
-  /* Description: Sets the background property of the main background.
-  * Defaut:  rgb(51, 51, 51); */
+  /* Sets the background property of the main background.
+  * Defaut: center/cover no-repeat url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/r8K5nG9Pxiyh9wvn6/videoblocks-fire-sparks-from-campfire-over-dark-background-loop_rzdceyytg_thumbnail-full01.png); */
 
   --userpop: url(https://i.pinimg.com/originals/79/d7/45/79d7453086a0fad67d5da6cecb165250.gif);
-  /* Description: Sets the background property of the user popout (e.g when you click on someones avi in chat).
-  * Defaut:  url(https://i.pinimg.com/originals/79/d7/45/79d7453086a0fad67d5da6cecb165250.gif); */
+  /* Sets the background property of the user popout (e.g when you click on someones avi in chat).
+  * Defaut: url(https://i.pinimg.com/originals/79/d7/45/79d7453086a0fad67d5da6cecb165250.gif); */
 
   --primarycolor: #99aab5;
+  /* Sets the primary color used within the theme for some elements.
+   * Default: #99aab5; */
+
   --secondarycolor: #7289da;
+  /* Sets the secondary color used within the theme for some elements.
+   * Default: #7289da; */
 
   --friendshover: rgba(114, 137, 218, .5);
   /* This sets the background property when hovering over friends in the friends tab.
    * Default: rgba(114, 137, 218, .5); */
 
   --tagcolor: #fff;
-  /* Description: Sets the text color for bot tags.
+  /* Sets the text color for bot tags.
   * Defaut: #fff; */
 
   --tagbackground: #bce0ff;
-  /* Description: Sets the background color for bot tags.
+  /* Sets the background color for bot tags.
   * Defaut: #fff; */
 
   --float-speed: 4s;
-  /* Description: Sets the number of seconds a float animation takes to finish.
+  /* Sets the number of seconds a float animation takes to finish.
   * Defaut:  4s; */
 
   --rootwidth: 400px;
-  /* Description: Sets the width of the root class (when you click on "View Profile").
+  /* Sets the width of the root class (when you click on "View Profile").
   * Defaut:  400px; */
 
   --rootheight: 600px;
-  /* Description: Sets the height of the root class (when you click on "View Profile").
+  /* Sets the height of the root class (when you click on "View Profile").
   * Defaut:  600px; */
 
   --embedback: rgba(114, 137, 218, .7);
