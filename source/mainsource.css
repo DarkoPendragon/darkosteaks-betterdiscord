@@ -150,6 +150,18 @@
 .nameCollapsed-34uFWo, .nameMuted-1MCOt4 {
   color: var(--catnamecollapsed) !important;
 }
+/* Pinned Messages */
+.da-messagesPopoutWrap {
+  background: rgba(0, 0, 0, .4) !important;
+}
+.da-messagesPopoutWrap .da-header {
+  background: rgba(0, 0, 0, .6) !important;
+  border-bottom: var(--generalborders) !important;
+}
+.da-messagesPopoutWrap .da-messageGroupWrapper {
+  border-radius: 1px !important;
+  background: rgba(0, 0, 0, .7) !important;
+}
 /* END Extra Text, Member Areas */
 
 /* Popouts */
@@ -170,6 +182,55 @@
 .da-quickMessage {
   border-radius: 0px;
   background: rgba(0, 0, 0, 0.7) !important;
+}
+.da-autocomplete, .da-autocompleteInner, .da-resultsGroup, .da-popout .da-container {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+.da-selectorSelected {
+  background: rgba(114, 137, 218, 0.4) !important;
+}
+.da-resultsGroup .da-option {
+  transition: all .3s ease-in !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+.da-resultsGroup .da-option:hover {
+  background: rgba(114, 137, 218, 0.4) !important;
+}
+.da-resultsGroup .da-option::after  {
+  background: 0 !important;
+}
+
+/* Profile Popout */
+.da-topSectionNormal {
+  background: center/cover no-repeat var(--normalback) !important;
+}
+.da-topSectionPlaying {
+  background: center/cover no-repeat var(--playingback) !important;
+}
+.da-topSectionSpotify {
+  background: center/cover no-repeat var(--spotifyback) !important;
+}
+.da-topSectionStreaming {
+  background: center/cover no-repeat var(--streamingback) !important;
+}
+/* Search Area */
+.search-results-wrap {
+  background: 0 !important;
+}
+.search-results-wrap .search-header {
+  background: rgba(0, 0, 0, 0.9) !important;
+  border: var(--generalborders);
+}
+.search-results-wrap .search-result:before, .search-results-wrap .search-result:after {
+  background: 0 !important;
+}
+.search-results-wrap .search-result .search-result-message.hit {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+.search-results-wrap .channel-separator .channel-name {
+    background: 0 !important;
 }
 /* END Popouts */
 

@@ -1,5 +1,4 @@
-//META{"name":"Darkos Tweaks Redone","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"4.0"}*//{}
-@import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkostweaks-betterdiscord@master/source/mainsource.css);
+//META{"name":"Darkos Tweaks Testing","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"4.0"}*//{}
 :root {
   --mainback: center/cover no-repeat url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/r8K5nG9Pxiyh9wvn6/videoblocks-fire-sparks-from-campfire-over-dark-background-loop_rzdceyytg_thumbnail-full01.png);
   /* Sets the background property of the main background.
@@ -7,7 +6,23 @@
 
   --userpop: url(https://i.pinimg.com/originals/79/d7/45/79d7453086a0fad67d5da6cecb165250.gif);
   /* Sets the background property of the user popout (e.g when you click on someones avi in chat).
-  * Defaut: url(https://i.pinimg.com/originals/79/d7/45/79d7453086a0fad67d5da6cecb165250.gif); */
+   * Defaut: url(https://i.pinimg.com/originals/79/d7/45/79d7453086a0fad67d5da6cecb165250.gif); */
+
+  --normalback: url(https://wallpaper.wiki/wp-content/uploads/2017/05/Minimalist-HD-Backgrounds.jpg);
+  /* Sets the image for user profiles with a normal status (e.g, not playing anything).
+   * Default: url(https://wallpaper.wiki/wp-content/uploads/2017/05/Minimalist-HD-Backgrounds.jpg) */
+
+  --playingback: url(https://c.wallhere.com/photos/c4/5c/Nintendo_Super_Mario_controllers_Nintendo_Entertainment_System_retro_games_minimalism-213112.jpg!d);
+  /* Sets the image for user profiles with a "playing" status.
+   * Default: url(https://c.wallhere.com/photos/c4/5c/Nintendo_Super_Mario_controllers_Nintendo_Entertainment_System_retro_games_minimalism-213112.jpg!d); */
+
+  --spotifyback: url(https://wallpaperbrowse.com/media/images/gxsdmTD.png);
+  /* Sets the image for user profiles listening to Spotify.
+  * Default: url(https://wallpaperbrowse.com/media/images/gxsdmTD.png); */
+
+  --streamingback: url(https://images.alphacoders.com/795/thumb-1920-795963.png);
+  /* Sets the image for user profiles that are streaming.
+  * Default: url(https://images.alphacoders.com/795/thumb-1920-795963.png); */
 
   --primarycolor: #99aab5;
   /* Sets the primary color used within the theme for some elements.
@@ -33,9 +48,9 @@
   /* Sets the number of seconds a float animation takes to finish.
   * Defaut:  4s; */
 
-  --rootwidth: 400px;
+  --rootwidth: 600px;
   /* Sets the width of the root class (when you click on "View Profile").
-  * Defaut:  400px; */
+  * Defaut:  600px; */
 
   --rootheight: 600px;
   /* Sets the height of the root class (when you click on "View Profile").
@@ -46,7 +61,7 @@
   * Defaut:  rgba(114, 137, 218, .4); */
 
   --textborderrad: 0px 0px 0px 0px;
-  /* Sets background value of the border-radius for the text area (sending texts).
+  /* Sets =value of the border-radius for the text area (sending texts).
   * Defaut:  0px 0px 0px 0px; */
 
   --catname: #d3faff;
