@@ -118,13 +118,25 @@
 .da-member:not(:hover) .da-content {
   transition: all 1s ease-in;
 }
+.da-channels .da-content {
+  transition: all .4s ease-in;
+}
+.da-channels .da-content:hover {
+  color: #fff !important;
+  background-color: rgba(114, 137, 218, .5) !important;
+}
+.da-channels .da-contentSelectedText {
+  background: rgba(114, 137, 218, .7) !important;
+  transition: all .2s ease-in;
+}
+
 /* Saw another theme do something like this, can't remember who... Think it was in the BD server.
- * Tried to redo it but still not as good.
- * The reason the wrapers postion is set to sticky is to prevent it from making the pseudo  elements from "reseting" when updated. */
+ * Tried to redo it but still not as good.  */
 .wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3 {
-  content: "" !important;
-  position: sticky;
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
+  z-index: 10;
+  right: 25px !important;
+  left: 0 !important;
 }
 .iconDefault-3Gr8d2, .iconHovered-2L3-fB, .iconCollapsed-3hFp_8, .iconHovered-2L3-fB, .iconHoveredCollapsed-3caIIZ, .iconMuted-1HVBGH {
   content: "" !important;
@@ -132,14 +144,12 @@
 }
 .nameDefault-2DI02H::before, .nameHovered-1gxhWH:before, .nameCollapsed-34uFWo::before, .nameHovered-1gxhWH::before, .nameHoveredCollapsed-2orEWB::before, .nameMuted-1MCOt4::before {
   content: '' !important;
-  z-index: -1 !important;
+  z-index: -1;
   position: absolute !important;
-  top: 0px !important;
-  right: 0 !important;
-  bottom: 0 !important;
+  right: 25px !important;
   left: 0 !important;
   border-bottom: 20px solid rgba(114, 137, 218, .5) !important;
-  border-right: 30px solid rgba(0,0,0,0) !important;
+  border-right: 25px solid rgba(0,0,0,0) !important;
 }
 .nameDefault-2DI02H, .nameHovered-1gxhWH, .nameCollapsed-34uFWo, .nameHoveredCollapsed-2orEWB, .nameHovered-1gxhWH, .nameMuted-1MCOt4 {
   content: "" !important;
