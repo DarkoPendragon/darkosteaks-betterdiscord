@@ -1,4 +1,4 @@
-/* Basic Float Animation */
+/* Basic Animations */
 @keyframes float {
   0%, 100% {
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .6);
@@ -8,6 +8,15 @@
   50% {
     box-shadow: 0 25px 15px 0 rgba(0, 0, 0, .2);
     transform: translatey(-20px)
+  }
+}
+@keyframes sidetoside {
+  0%, 100% {
+    transform: translatex(6px)
+  }
+
+  50% {
+    transform: translatex(-6px)
   }
 }
 
@@ -180,7 +189,19 @@
 }
 
 /* User Pop */
-/* Probably don't need all the + selectors buuuuuuuuut ye. Wanted to make sure. */
+.da-userPopout .da-role>.da-roleName {
+  transition: all .3s ease-in !important;
+  opacity: 0;
+  width: 0px;
+}
+.da-userPopout .da-role:hover>.da-roleName {
+  opacity: 1;
+  width: 100%;
+}
+.da-userPopout .da-role:not(:hover)>.da-roleName {
+  transition-delay: 2s !important;
+}
+/* Probably don't need all the + selectors buuuuuuuuut ye. */
 .da-headerNormal, .da-headerNormal+.da-body, .da-headerNormal+.da-body+.da-footer,
 .da-headerPlaying, .da-headerPlaying+.da-body,.da-headerPlaying+.da-body+.da-footer,
 .da-headerStreaming+.da-body, .da-headerStreaming+.da-body+.da-footer {
@@ -320,6 +341,22 @@
 /* END Animations */
 
 /* Random Stuff */
+.da-accountDetails .discriminator {
+  font-size: 0px;
+}
+.da-accountDetails .discriminator::before {
+  font-size: 10px !important;
+  display: static !important;
+  content: "Darko Tweaks v4.2" !important
+}
+.da-wordmark svg path {
+  display: none;
+}
+.da-wordmark svg {
+  background: center/contain no-repeat url(https://i.imgur.com/nconxl0.gif) !important;
+  margin-top: 0px !important;
+  width: 200% !important;
+}
 .da-botTag {
   background-color: var(--tagbackground);
   color: var(--tagcolor)
@@ -327,6 +364,16 @@
 .root-SR8cQa {
   width: var(--rootwidth);
   height: var(--rootheight)
+}
+#discord-a {
+  /* animation: sidetoside 12s ease-out infinite;
+  mix-blend-mode: exclusion; */
+  display: none;
+}
+.da-homeIcon {
+  mix-blend-mode: color-dodge;
+  background: center/cover no-repeat url(https://i.imgur.com/VgOxIl0.png) !important;
+  background-size: 125% !important;
 }
 /* END Random Stuff */
 
