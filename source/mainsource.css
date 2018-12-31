@@ -505,10 +505,10 @@
   border-bottom: 25px solid rgb(114, 137, 218) !important;
   border-right: 40px solid rgba(0,0,0,0) !important;
 }
-#user-settings {
+#user-settings, .da-layer .da-standardSidebarView {
   background: var(--settingsbackground) !important;
 }
-#user-settings div .da-standardSidebarView, #user-settings div .da-sidebarRegion, #user-settings div .da-contentRegion, #bd-settingspane-container {
+#user-settings div .da-standardSidebarView, #user-settings div .da-sidebarRegion, #user-settings div .da-contentRegion, #bd-settingspane-container, .da-layer .da-standardSidebarView .da-sidebarRegion, .da-layer .da-standardSidebarView .da-contentRegion {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 /* END Settings Areas */
