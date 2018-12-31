@@ -1,6 +1,7 @@
 //META{"name":"Darkos Tweaks Redone","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"4.4"}*//{}
 @import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkostweaks-betterdiscord@master/source/mainsource.css);
 :root {
+<<<<<<< HEAD
   --mainback: center/cover no-repeat url(https://wallpapercave.com/wp/lYcmoB2.png); /* Sets the background property of the main background. */
   --backblur: 0px; /* This sets the blur ontop of the main background image. */
   --settingsbackground: center/cover no-repeat url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fak6.picdn.net%2Fshutterstock%2Fvideos%2F23381416%2Fthumb%2F1.jpg&f=1); /* Sets the settings area background property. */
@@ -25,4 +26,82 @@
   --generaltransparency: .4; /* This sets transparency for various elements. */
   --messagetransparency: .3; /* This sets the the transparency of messages. */
   --mentioncolor: rgba(100,166,255,.9); /* This sets the side color of messages when you are mentioned. */
+=======
+  --mainback: center/cover no-repeat url(https://i.imgur.com/5SqGFTE.png);
+  /* Sets the background property of the main background.
+  * Defaut: center/cover no-repeat url(https://i.imgur.com/5SqGFTE.png); */
+
+  --userpop: url(https://i.pinimg.com/originals/79/d7/45/79d7453086a0fad67d5da6cecb165250.gif);
+  /* Sets the background property of the user popout (e.g when you click on someones avi in chat).
+   * Defaut: url(https://i.pinimg.com/originals/79/d7/45/79d7453086a0fad67d5da6cecb165250.gif); */
+
+  --normalback: url(https://wallpaper.wiki/wp-content/uploads/2017/05/Minimalist-HD-Backgrounds.jpg);
+  /* Sets the image for user profiles with a normal status (e.g, not playing anything).
+   * Default: url(https://wallpaper.wiki/wp-content/uploads/2017/05/Minimalist-HD-Backgrounds.jpg) */
+
+  --playingback: url(https://c.wallhere.com/photos/c4/5c/Nintendo_Super_Mario_controllers_Nintendo_Entertainment_System_retro_games_minimalism-213112.jpg!d);
+  /* Sets the image for user profiles with a "playing" status.
+   * Default: url(https://c.wallhere.com/photos/c4/5c/Nintendo_Super_Mario_controllers_Nintendo_Entertainment_System_retro_games_minimalism-213112.jpg!d); */
+
+  --spotifyback: url(https://wallpaperbrowse.com/media/images/gxsdmTD.png);
+  /* Sets the image for user profiles listening to Spotify.
+  * Default: url(https://wallpaperbrowse.com/media/images/gxsdmTD.png); */
+
+  --streamingback: url(https://images.alphacoders.com/795/thumb-1920-795963.png);
+  /* Sets the image for user profiles that are streaming.
+  * Default: url(https://images.alphacoders.com/795/thumb-1920-795963.png); */
+
+  --primarycolor: #99aab5;
+  /* Sets the primary color used within the theme for some elements.
+   * Default: #99aab5; */
+
+  --secondarycolor: #7289da;
+  /* Sets the secondary color used within the theme for some elements.
+   * Default: #7289da; */
+
+  --friendshover: rgba(114, 137, 218, .5);
+  /* This sets the background property when hovering over friends in the friends tab.
+   * Default: rgba(114, 137, 218, .5); */
+
+  --tagcolor: #fff;
+  /* Sets the text color for bot tags.
+  * Defaut: #fff; */
+
+  --tagbackground: #bce0ff;
+  /* Sets the background color for bot tags.
+  * Defaut: #fff; */
+
+  --float-speed: 4s;
+  /* Sets the number of seconds a float animation takes to finish.
+  * Defaut:  4s; */
+
+  --rootwidth: 600px;
+  /* Sets the width of the root class (when you click on "View Profile").
+  * Defaut:  600px; */
+
+  --rootheight: 600px;
+  /* Sets the height of the root class (when you click on "View Profile").
+  * Defaut:  600px; */
+
+  --embedback: rgba(114, 137, 218, .7);
+  /* Sets background value for innerEmbeds (Message Embeds).
+  * Defaut:  rgba(114, 137, 218, .4); */
+
+  --textborderrad: 0px 0px 0px 0px;
+  /* Sets =value of the border-radius for the text area (sending texts).
+  * Defaut:  0px 0px 0px 0px; */
+
+  --catname: #d3faff;
+  /* Name of catagories when not collapsed.
+   * Default: #d3faff; */
+
+   --catnamecollapsed: black;
+   /* Name of catagories when collapsed.
+    * Default: black; */
+
+  --generalborders: 1px solid rgba(114, 137, 218, .2);
+  /* This is the blue borders you'll see around discord inbetween channels, the text area and the memebrs list.
+   * Setting this to 0 will disable them.
+   * Default: 1px solid rgba(114, 137, 218, .2); */
+>>>>>>> d3a1dc87f90b03e727631e9c8190f38176afe172
 }
