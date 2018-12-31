@@ -60,8 +60,19 @@
 .da-gameLibrary {
   background: 0 !important;
 }
-.da-channels, .da-guilds, .da-guildsWrapper, .da-titleBar, .da-members, .da-messages, .theme-dark .da-chat form, .da-headerBar  {
+.da-members, .da-messages, .da-chat form, .da-headerBar, #friends, .da-gameLibrary  {
   background: rgba(0, 0, 0, .3) !important;
+}
+.da-guilds, .da-channels, .da-channels .da-searchBar .da-guildsWrapper, .da-privateChannels {
+  border-radius: 0px !important;
+}
+.da-guilds, .da-channels, .da-titleBar, .da-members {
+  background: rgba(0, 0, 0, var(--generaltransparency)) !important;
+}
+.da-titleBar {
+  padding-top: 2px !important;
+  margin-top: 0px !important;
+  border-radius: 0px !important
 }
 
 /* Makes switch's and cards a bit more visable */
@@ -84,9 +95,22 @@
 }
 /* END Transparent Backgrounds & Tweaks */
 
-/* Set Backgrounds */
+/* Set Main Backgrounds */
 .da-appMount {
+  /* z-index: 200 !important; */
   background: var(--mainback) !important;
+  /* filter: blur(5px); */
+}
+.app::before {
+    content: "";
+    opacity: 1 !important;
+    position: fixed !important;
+    background: var(--mainback);
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: 100% !important;
+    filter: blur(var(--backblur));
 }
 .da-userPopout {
   background: var(--userpop) !important;
@@ -100,25 +124,60 @@
 .theme-dark .da-chat form {
   margin: 0px;
 }
-.da-innerNoAutocomplete {
-  border-radius: var(--textborderrad)
+/* TextArea */
+.da-innerNoAutocomplete, .da-innerAutocomplete {
+  border-radius: var(--textborderrad) !important;
+  margin: 0px 10px 0px 10px !important;
+  background: rgba(0, 0, 0, var(--generaltransparency)) !important
 }
-/* Thought it might look neat if they connected borders. */
-/* Probably just me though. */
-.da-titleBar {
-  border-bottom: var(--generalborders) !important;
+.da-innerAutocomplete {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+.da-isMentionedCozy:after {
+  background: rgba(250,166,26,.2) !important;
+  border-left: 6px solid var(--mentioncolor);
+  border-radius: 100% 0% 0% 100% !important;
+  top: 0px !important;
+  bottom: 0;
+  content: " ";
+  left: -6px;
+  position: absolute;
+  width: 2px;
+}
+.da-headerCozyMeta {
+  width: 100% !important;
+  /* text-align: center; */
+}
+.da-timestampCozy {
+  color: rgba(255, 255, 255, 0.8) !important;
+  float: right !important;
+  margin-right: 100px !important;
+}
+.da-headerCozyMeta .da-username {
+  float: left;
 }
 .da-channels {
-  border-right: var(--generalborders) !important;
+  border-right: 1px solid rgba(0, 0, 0, .2) !important;
+}
+.da-channels .da-nameDefaultText {
+  color: rgba(255, 255, 255, 0.8);
+}
+.da-channels .da-nameMutedText {
+  color: rgba(200, 200, 200, 0.5);
 }
 .da-members {
-  border-left: var(--generalborders) !important;
+  border-left: 1px solid rgba(0, 0, 0, .2) !important;
 }
 .da-headerBar {
-  border-bottom: var(--generalborders) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, .2) !important;
 }
 .da-guildInner {
+  transition: all .5s ease-in !important;
   border-radius: 5px !important;
+}
+.da-selected .da-guildInner {
+  transform: translatex(3px) !important;
 }
 .da-member:hover .da-content {
   transition: all 1s ease-in;
@@ -138,7 +197,19 @@
   background: rgba(114, 137, 218, .7) !important;
   transition: all .2s ease-in;
 }
-
+/* TextChatArea */
+.da-messagesWrapper .da-messages .da-containerCozy .da-message .da-contentCozy {
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 85px;
+  background: rgba(0, 0, 0, var(--messagetransparency)) !important;
+}
+.da-message .da-avatar .da-image {
+  border-radius: 5px;
+}
+.da-member .da-wrapper {
+  border-radius: 5px !important;
+}
 /* Saw another theme do something like this, can't remember who... Think it was in the BD server.
  * Tried to redo it but still not as good.  */
 .wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3 {
@@ -347,7 +418,7 @@
 .da-accountDetails .discriminator::before {
   font-size: 10px !important;
   display: static !important;
-  content: "Darko Tweaks v4.2" !important
+  content: "Darko Tweaks v4.4" !important
 }
 .da-wordmark svg path {
   display: none;
@@ -392,9 +463,6 @@
   transform: scale(1.1) !important
 }
   /* END Hover Animation */
-.contentRegion-3nDuYy, .sidebarRegionScroller-3MXcoP {
-  background: rgba(0, 0, 0, 0.5) !important;
-}
 .da-keybindGroup {
   background: 0 !important;
   margin-bottom: 20px;
@@ -436,5 +504,11 @@
   left: 0;
   border-bottom: 25px solid rgb(114, 137, 218) !important;
   border-right: 40px solid rgba(0,0,0,0) !important;
+}
+#user-settings {
+  background: var(--settingsbackground) !important;
+}
+#user-settings div .da-standardSidebarView, #user-settings div .da-sidebarRegion, #user-settings div .da-contentRegion, #bd-settingspane-container {
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 /* END Settings Areas */
