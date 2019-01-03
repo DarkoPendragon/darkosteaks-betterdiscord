@@ -16,7 +16,7 @@
   --tagbackground: #bce0ff; /* Sets the background color for bot tags. */
   --float-speed: 4s; /* Sets the number of seconds a float animation takes to finish.  */
   --rootwidth: 600px; /* Sets the width of the root class (when you click on "View Profile"). */
-  --rootheight: 600px; /* Sets the height of the root class (when you click on "View Profile"). */
+  --rootheight: 400px; /* Sets the height of the root class (when you click on "View Profile"). */
   --embedback: rgba(114, 137, 218, .7); /* Sets background value for innerEmbeds (Message Embeds). */
   --textborderrad: 10px 10px 10px 10px; /* Sets =value of the border-radius for the text area (sending texts). */
   --catname: #d3faff; /* Name of catagories when not collapsed. */
