@@ -1,28 +1,52 @@
 //META{"name":"Darkos Tweaks Redone","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"4.4"}*//{}
 @import url(https://cdn.jsdelivr.net/gh/DarkoPendragon/darkostweaks-betterdiscord@master/source/mainsource.css);
+@import url('https://fonts.googleapis.com/css?family=Rokkitt');
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
 :root {
-  --mainback: center/cover no-repeat url(https://wallpapercave.com/wp/lYcmoB2.png); /* Sets the background property of the main background. */
-  --backblur: 0px; /* This sets the blur ontop of the main background image. */
-  --settingsbackground: center/cover no-repeat url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fak6.picdn.net%2Fshutterstock%2Fvideos%2F23381416%2Fthumb%2F1.jpg&f=1); /* Sets the settings area background property. */
-  --userpop: url(https://i.pinimg.com/originals/79/d7/45/79d7453086a0fad67d5da6cecb165250.gif); /* Sets the background property of the user popout (e.g when you click on someones avi in chat). */
-  --normalback: url(https://wallpaper.wiki/wp-content/uploads/2017/05/Minimalist-HD-Backgrounds.jpg); /* Sets the image for user profiles with a normal status (e.g, not playing anything). */
-  --playingback: url(https://c.wallhere.com/photos/c4/5c/Nintendo_Super_Mario_controllers_Nintendo_Entertainment_System_retro_games_minimalism-213112.jpg!d); /* Sets the image for user profiles with a "playing" status. */
-  --spotifyback: url(https://wallpaperbrowse.com/media/images/gxsdmTD.png); /* Sets the image for user profiles listening to Spotify. */
-  --streamingback: url(https://images.alphacoders.com/795/thumb-1920-795963.png); /* Sets the image for user profiles that are streaming. */
-  --primarycolor: #99aab5; /* Sets the primary color used within the theme for some elements. */
-  --secondarycolor: #7289da; /* Sets the secondary color used within the theme for some elements. */
+  /* Backgrounds */
+  --mainback: center/cover no-repeat url(https://i.imgur.com/slFxzVi.jpg); /* Sets the background property of the main background. */
+  --backblur: 1.3px; /* This sets the blur ontop of the main background image. Set to 0px to remove. */
+  --settingsbackground: center/cover no-repeat url(https://i.imgur.com/avpAC1Z.jpg); /* Sets the settings area background property. */
+  --userpop: center/cover no-repeat url(https://i.imgur.com/FxI9HaZ.jpg); /* Sets the background property of the user popout (e.g when you click on someones avi in chat). */
+  --normalback: url(https://i.imgur.com/wZEUf61.jpg); /* Sets the image for user profiles with a normal status (e.g, not playing anything). */
+  --playingback: url(https://i.imgur.com/wZEUf61.jpg); /* Sets the image for user profiles with a "playing" status. */
+  --spotifyback: url(https://i.imgur.com/wZEUf61.jpg); /* Sets the image for user profiles listening to Spotify. */
+  --streamingback: url(https://i.imgur.com/wZEUf61.jpg); /* Sets the image for user profiles that are streaming. */
+
+  /* Friends Area */
   --friendshover: rgba(114, 137, 218, .5); /* This sets the background property when hovering over friends in the friends tab. */
+
+  /* Text Area */
+  --mentioncolor: rgba(100,166,255,.9); /* This sets the side color of messages when you are mentioned. */
+  --embedback: rgba(114, 137, 218, .7); /* Sets background value for innerEmbeds (Message Embeds). */
+
+  /* Bot Tags */
   --tagcolor: #fff; /* Sets the text color for bot tags. */
   --tagbackground: #bce0ff; /* Sets the background color for bot tags. */
+
+  /* Text Input Area */
+  --textborder: 1px solid rgba(100, 100, 100, .3); /* Sets value of the border for the text inner elemtns. */
+  --textborderrad: 10px 10px 10px 10px; /* Sets value of the border-radius for the text inner elemtns. */
+  --textbackground: rgba(0, 0, 0, var(--generaltransparency)); /* Sets the background property of the text inner elemtns.*/
+
+  /* Catagories/Channels */
+  --catname: rgb(194, 209, 239); /* Color of names of catagories when not collapsed. */
+  --catnamecollapsed: rgba(194, 209, 239, .5); /* Color of names of catagories when collapsed. */
+  --unreadtext: rgba(0, 255, 255, .8); /* Color of names of channels names when unread. */
+  --beforesudisplay: block; /* Set to block to enable the catagories backgrounds, set to none to disable them.*/
+  --customcatcolor: rgba(31, 61, 122, .7); /* This sets the what color is displayed behind catagory names. */
+  --textchannelnames:  rgba(255, 255, 255, .7); /* This sets the color of channel names when not muted. */
+  --voicechannelnames: #fff; /* Same as textchannelnames, but for voice. */
+
+  /* General Settings */
   --float-speed: 4s; /* Sets the number of seconds a float animation takes to finish.  */
-  --rootwidth: 600px; /* Sets the width of the root class (when you click on "View Profile"). */
-  --rootheight: 400px; /* Sets the height of the root class (when you click on "View Profile"). */
-  --embedback: rgba(114, 137, 218, .7); /* Sets background value for innerEmbeds (Message Embeds). */
-  --textborderrad: 10px 10px 10px 10px; /* Sets =value of the border-radius for the text area (sending texts). */
-  --catname: #d3faff; /* Name of catagories when not collapsed. */
-  --catnamecollapsed: black; /* Name of catagories when collapsed. */
   --generalborders: 1px solid rgba(114, 137, 218, .2); /* This is the blue borders you'll see around discord inbetween channels, the text area and the memebrs list. */
-  --generaltransparency: .4; /* This sets transparency for various elements. */
-  --messagetransparency: .3; /* This sets the the transparency of messages. */
-  --mentioncolor: rgba(100,166,255,.9); /* This sets the side color of messages when you are mentioned. */
+  --generaltransparency: .5; /* This sets transparency for various main elements. */
+  --chattransparency: .3; /* Sets the transparency of the main chat area. */
+  --primarycolor: #99aab5; /* Sets the primary color used within the theme for some elements. */
+  --secondarycolor: #7289da; /* Sets the secondary color used within the theme for some elements. */
+
+  /* Misc Settings */
+  --rootwidth: inherit; /* Sets the width of the root class (when you click on "View Profile"). */
+  --rootheight: inherit; /* Sets the height of the root class (when you click on "View Profile"). */
 }
