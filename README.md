@@ -19,6 +19,6 @@ _A basic preview of the theme._
 * Custom profile backgrounds depending on if a user is playing a game, streaming or listening to Spotify
 * Various other Custom backgrounds
 * Modified channels area
-* Text categories re-stylized
+* Text categories re-stylized (which can be 'disabled')
 * ~Auto updating~
 * And more!
