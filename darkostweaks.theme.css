@@ -1,10 +1,10 @@
-//META{"name":"Darkos Tweaks Redone","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"5","website":"https://discord.gg/FKYrX4X"}*//{}
+//META{"name":"Darkos Tweaks Redone","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"5.2","website":"https://discord.gg/FKYrX4X"}*//{}
 @import url('https://fonts.googleapis.com/css?family=Rokkitt');
 @import url('https://fonts.googleapis.com/css?family=Alegreya');
 :root {
   /* Backgrounds */
   --mainback: center/cover no-repeat url(https://i.imgur.com/slFxzVi.jpg); /* Sets the background property of the main background. */
-  --backblur: 1.3px; /* This sets the blur ontop of the main background image. Set to 0px to remove. */
+  --backblur: .3px; /* This sets the blur ontop of the main background image. Set to 0px to remove. */
   --settingsbackground: center/cover no-repeat url(https://i.imgur.com/avpAC1Z.jpg); /* Sets the settings area background property. */
   --userpop: center/cover no-repeat url(https://i.imgur.com/FxI9HaZ.jpg); /* Sets the background property of the user popout (e.g when you click on someones avi in chat). */
   --normalback: url(https://i.imgur.com/wZEUf61.jpg); /* Sets the image for user profiles with a normal status (e.g, not playing anything). */
@@ -52,7 +52,7 @@
 
 /* Cusotm Font */
 ::-webkit-input-placeholder, body, button, input, select, textarea {
-    font-family: 'Rokkitt', serif;
+  font-family: 'Rokkitt', serif;
 }
 /* Basic Animations */
 @keyframes float {
@@ -88,8 +88,8 @@
 .bda-dark,
 .da-appMount,
 .da-app,
-#friends,
-#friends .friends-table .friends-table-body,
+.theme-dark .container-3gCOGc,
+.da-friendsTable,
 .app,
 .app .flex-vertical .theme-dark,
 .da-layer,
@@ -127,7 +127,7 @@
   background: rgba(0, 0, 0, .3) !important;
 }
 
-.da-guilds, .da-channels, .da-titleBar, .da-members, .da-titleWrapper .da-headerBar, .da-gameLibrary, #friends, .da-headerBar  {
+.da-guilds, .da-channels, .da-titleBar, .da-members, .da-titleWrapper .da-headerBar, .da-gameLibrary, .da-container .da-friendsTable, .da-headerBar  {
   background: rgba(0, 0, 0, var(--generaltransparency)) !important;
 }
 .chat-3bRxxu {
@@ -144,13 +144,13 @@
 }
 
 /* Scroller  */
-.scroller-wrap .scroller::-webkit-scrollbar-thumb {
+.da-scrollerWrap .da-scroller::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, .9) !important;
   border: 2px solid rgba(0, 0, 0, .1) !important;
 }
-.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+.da-scrollerWrap .da-scroller::-webkit-scrollbar-track-piece {
   background-color: rgba(0, 0, 0, .1) !important;
-  border: none;
+  border: none !important;
 }
 /* END Transparent Backgrounds & Tweaks */
 
@@ -161,15 +161,15 @@
   /* filter: blur(5px); */
 }
 .app::before {
-    content: "";
-    opacity: 1 !important;
-    position: fixed !important;
-    background: var(--mainback);
-    top: 0px;
-    left: 0px;
-    width: 100% !important;
-    height: 100% !important;
-    filter: blur(var(--backblur));
+  content: "";
+  opacity: 1 !important;
+  position: fixed !important;
+  background: var(--mainback);
+  top: 0px;
+  left: 0px;
+  width: 100% !important;
+  height: 100% !important;
+  filter: blur(var(--backblur));
 }
 .da-userPopout {
   background: var(--userpop) !important;
@@ -271,7 +271,7 @@
   border-radius: 5px !important;
 }
 /* Saw another theme do something like this, can't remember who... Think it was in the BD server.
- * Tried to redo it but still not as good.  */
+* Tried to redo it but still not as good.  */
 .wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3 {
   margin-bottom: 10px !important;
   z-index: 10;
@@ -420,42 +420,42 @@
   background: rgba(0, 0, 0, 0.5) !important;
 }
 .search-results-wrap .channel-separator .channel-name {
-    background: 0 !important;
+  background: 0 !important;
 }
 /* END Popouts */
 
 /* Custom Friends Tab */
-.friends-row, .friends-row .avatar-small, .friends-row .da-nameTag,
-.friends-row .friends-column-status,
-.friends-row .da-iconSizeSmall,
-.friends-row .friends-column .friends-column-guilds {
+.da-friendsRow, .da-friendsRow .avatar-small, .da-friendsColumn .da-nameTag,
+.da-friendsRow .da-friendsColumnStatus,
+.da-friendsRow .da-iconSizeSmall,
+.da-friendsRow .da-friendsColumn .da-friendsColumnGuilds {
   transition: all 1s !important;
   overflow: visible !important;
   background-size: cover !important;
 }
-.friends-row:hover {
+.da-friendsRow:hover {
   height: 90px !important;
   border-radius: 0px !important;
   background: var(--friendshover) !important;
 }
-.friends-row:hover .avatar-small {
+.da-friendsRow:hover .avatar-small {
   width: 75px !important;
   height: 75px !important;
   border: 1px solid var(--primarycolor) !important;
   border-radius: 5px !important;
   background-size: cover !important;
 }
-.friends-row:hover .da-nameTag {
+.da-friendsRow:hover .da-nameTag {
   margin-top: -25px !important;
 }
-.friends-row:hover .friends-column-status {
+.da-friendsRow:hover .da-friendsColumnStatus {
   margin-left: -115px !important;
   margin-top: 20px !important;
 }
-.friends-row:hover .friends-column .friends-column-guilds {
+.da-friendsRow:hover .da-friendsColumn .da-friendsColumnGuilds {
   margin: 0 !important;
 }
-.friends-row:hover .da-iconSizeSmall {
+.da-friendsRow:hover .da-iconSizeSmall {
   opacity: 1 !important;
   width: 70px !important;
   height: 70px !important;
@@ -464,23 +464,28 @@
   background-size: cover !important;
   left: 20px !important;
 }
-.friends-row .friends-column-actions .friends-action {
-  visibility: visible !important;
+.da-friendsRow .da-friendsColumnActions .da-friendsAction {
   transition: all 1s !important;
-  background-size: 20px 20px !important;
 }
-.friends-row:hover .friends-column-actions .friends-action {
+.da-friendsRow:not(:hover) .da-friendsColumnActions .da-friendsAction {
+  visibility: hidden !important;
+  transition: all 1s !important;
+  background-size: 2px 2px !important;
+  width: 0px !important;
+  height: 0px !important;
+}
+.da-friendsRow:hover .da-friendsColumnActions .da-friendsAction {
   width: 50px !important;
   height: 50px !important;
   background-size: 35px 35px !important;
 }
-.friends-row:hover .friends-column-actions .friends-action.friends-action-video-call {
+.da-friendsRow:hover .da-friendsColumnActions .da-friendsAction.da-friendsActionVideoCall {
   background-color: rgba(100, 255, 230, 0.5) !important
 }
-.friends-row:hover .friends-column-actions .friends-action.friends-action-voice-call {
+.da-friendsRow:hover .da-friendsColumnActions .da-friendsAction.da-friendsActionVoiceCall {
   background-color: rgba(0, 255, 40, 0.5) !important
 }
-.friends-row:hover .friends-column-actions .friends-action.friends-action-remove {
+.da-friendsRow:hover .da-friendsColumnActions .da-friendsAction.da-friendsActionRemove {
   background-color: rgba(255, 0, 0, 0.8) !important
 }
 /* END Custom Friends Tab */
@@ -493,7 +498,7 @@
 /* END Game/Library Tabs */
 
 /* Animations */
-  /* Float */
+/* Float */
 .da-userPopout, .root-SR8cQa {
   animation: float var(--float-speed) ease-in-out infinite
 }
@@ -540,7 +545,7 @@
 
 
 /* Settings Areas */
-  /* Hover item animations */
+/* Hover item animations */
 .da-sidebar .da-notSelected:not(:hover), #bd-settings-sidebar .ui-tab-bar-item:not(:hover) {
   transition: all 1.2s !important;
   transform: scale(1)
@@ -552,7 +557,7 @@
 .da-sidebar .da-selected, .theme-dark #bd-settings-sidebar .ui-tab-bar-item.selected{
   transform: scale(1.1) !important
 }
-  /* END Hover Animation */
+/* END Hover Animation */
 .da-keybindGroup {
   background: 0 !important;
   margin-bottom: 20px;
@@ -620,35 +625,35 @@
   background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
-.chat-3bRxxu, .da-gameLibrary, #friends, .root-1BQpZw {
+.chat-3bRxxu, .da-gameLibrary, .theme-dark .container-3gCOGc, .root-1BQpZw {
   border-radius: 10px;
   margin: 20px 20px;
 }
 /* .da-messages .da-divider {
   display: none !important;
-} */
-.da-guildsWrapper {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  margin: 20px 0px 20px 30px;
-  background: rgba(0, 0, 0, .5) !important;
-}
+  } */
+  .da-guildsWrapper {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 20px 0px 20px 30px;
+    background: rgba(0, 0, 0, .5) !important;
+  }
 
-.channels-Ie2l6A {
-  /* background: rgba(0, 0, 0, .5) !important; Whoops, forgot its apart of the general settings. Am smart.*/
-  border-top-right-radius: 10px !important;
-  border-bottom-right-radius: 10px !important;
-  margin: 20px 0px !important;
-}
+  .channels-Ie2l6A {
+    /* background: rgba(0, 0, 0, .5) !important; Whoops, forgot its apart of the general settings. Am smart.*/
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    margin: 20px 0px !important;
+  }
 
-/* width : 48%;
-top: -100px !important;
+  /* width : 48%;
+  top: -100px !important;
   border: 1px solid blue;
   height: 150px;
   float:right;
   overflow-y:scroll; */
-/* .da-guildsWrapper  {
-  background:#942911 !important;
+  /* .da-guildsWrapper  {
+    background:#942911 !important;
     /* color:white; */
     /* top:30px; */
     /* left: -10px; */
@@ -659,11 +664,11 @@ top: -100px !important;
     position: absolute; /* not relative anymore
     z-index:5;
     transform: translate(-10px, 30px);
-}
-.da-guilds {
-  width : 500px !important;
-  position: absolute;
-}
-.da-guild {
-  display: inline !important;
-} */
+  }
+  .da-guilds {
+    width : 500px !important;
+    position: absolute;
+  }
+  .da-guild {
+    display: inline !important;
+    } */
