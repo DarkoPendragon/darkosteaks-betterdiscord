@@ -1,7 +1,7 @@
 # Darko's Tweaks Theme for BetterDiscord
 ***
 A theme I've thrown together and will continue to update over time. Below will list it's basic features and info.  
-If you have any ideas for the theme, feedback, need help or just want to chat swing by my [Discord server](https://discord.gg/FKYrX4X)!
+If you have any ideas for the theme, feedback, need help or just want to chat swing by my [Discord server](https://discord.gg/FKYrX4X)!  
 
 # Usage
 1) Add the theme (`darkostweaks.theme.css`) to the themes folder for BD (%appdata%/BetterDiscord/themes).
@@ -20,5 +20,5 @@ _A basic preview of the theme._
 * Various other Custom backgrounds
 * Modified channels area
 * Text categories re-stylized
-* Auto updating
+* ~Auto updating~
 * And more!
