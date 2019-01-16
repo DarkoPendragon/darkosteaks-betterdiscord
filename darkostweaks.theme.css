@@ -52,7 +52,7 @@
 
 /* Cusotm Font */
 ::-webkit-input-placeholder, body, button, input, select, textarea {
-  font-family: 'Rokkitt', serif;
+    font-family: 'Rokkitt', serif;
 }
 /* Basic Animations */
 @keyframes float {
@@ -161,15 +161,15 @@
   /* filter: blur(5px); */
 }
 .app::before {
-  content: "";
-  opacity: 1 !important;
-  position: fixed !important;
-  background: var(--mainback);
-  top: 0px;
-  left: 0px;
-  width: 100% !important;
-  height: 100% !important;
-  filter: blur(var(--backblur));
+    content: "";
+    opacity: 1 !important;
+    position: fixed !important;
+    background: var(--mainback);
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: 100% !important;
+    filter: blur(var(--backblur));
 }
 .da-userPopout {
   background: var(--userpop) !important;
@@ -184,14 +184,21 @@
 }
 .da-innerNoAutocomplete, .da-innerAutocomplete {
   border-radius: var(--textborderrad) !important;
-  border: var(--textborder);
+  /* border: var(--textborder); */
   margin: 0px 10px 0px 10px !important;
-  background: rgba(0, 0, 0, var(--generaltransparency)) !important
+  background: rgba(75, 75, 75, .2) !important
 }
 .da-innerAutocomplete {
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
 }
+/* #bda-qem, #bda-qem-twitch, #bda-qem-favourite, #bda-qem-emojis {
+  color: #fff !important
+}
+#bda-qem-favourite-container, #bda-qem-twitch, #bda-qem, .da-emojiPicker {
+  background: rgba(0, 0, 0, .2);
+  /* background: rgb(100,100,100) */
+} */
 .da-isMentionedCozy:after {
   background: rgba(250,166,26,.2) !important;
   border-left: 6px solid var(--mentioncolor);
@@ -271,7 +278,7 @@
   border-radius: 5px !important;
 }
 /* Saw another theme do something like this, can't remember who... Think it was in the BD server.
-* Tried to redo it but still not as good.  */
+ * Tried to redo it but still not as good.  */
 .wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3 {
   margin-bottom: 10px !important;
   z-index: 10;
@@ -338,27 +345,39 @@
 .da-userPopout .da-role:not(:hover)>.da-roleName {
   transition-delay: 2s !important;
 }
-
 .da-userPopout .da-mask {
   border-radius: 0!important;
   -webkit-mask: none!important;
   mask: none!important;
 }
-
 .da-userPopout .da-popout {
   height: 200px;
   width: 250px;
 }
-
-.da-statusProfile.da-online, .da-statusProfile.da-dnd, .da-statusProfile.da-idle, .da-statusProfile.da-offline {
-  height: 15px;
-  width: 15px;
+.da-headerNameWrapper {
+  display: none;
 }
-
+.headerText-2sdzFM .username, .headerText-2sdzFM .discriminator {
+  color: #fff !important;
+  font-size: 19px;
+  font-weight: 600;
+}
+.headerText-2sdzFM .discriminator {
+  display: none;
+}
+.headerText-2sdzFM, .da-headerText {
+  z-index: 90 !important;
+}
+.da-statusProfile.da-online, .da-statusProfile.da-dnd, .da-statusProfile.da-idle, .da-statusProfile.da-offline {
+  height: 35px;
+  z-index: -100 !important;
+  border: 0 !important;
+  position: static;
+  border-radius: 0 !important;
+}
 .da-userPopout .da-headerTop {
   padding-top: 0;
 }
-
 
 /* Probably don't need all the + selectors buuuuuuuuut ye. */
 .da-headerNormal, .da-headerNormal+.da-body, .da-headerNormal+.da-body+.da-footer,
@@ -420,7 +439,7 @@
   background: rgba(0, 0, 0, 0.5) !important;
 }
 .search-results-wrap .channel-separator .channel-name {
-  background: 0 !important;
+    background: 0 !important;
 }
 /* END Popouts */
 
@@ -498,7 +517,7 @@
 /* END Game/Library Tabs */
 
 /* Animations */
-/* Float */
+  /* Float */
 .da-userPopout, .root-SR8cQa {
   animation: float var(--float-speed) ease-in-out infinite
 }
@@ -545,7 +564,7 @@
 
 
 /* Settings Areas */
-/* Hover item animations */
+  /* Hover item animations */
 .da-sidebar .da-notSelected:not(:hover), #bd-settings-sidebar .ui-tab-bar-item:not(:hover) {
   transition: all 1.2s !important;
   transform: scale(1)
@@ -557,7 +576,7 @@
 .da-sidebar .da-selected, .theme-dark #bd-settings-sidebar .ui-tab-bar-item.selected{
   transform: scale(1.1) !important
 }
-/* END Hover Animation */
+  /* END Hover Animation */
 .da-keybindGroup {
   background: 0 !important;
   margin-bottom: 20px;
@@ -618,7 +637,7 @@
 
 /* Un-Cat */
 /* These are all apart of testing new things out and will eventually go to their right places. */
-.da-messages .container-1YxwTf {
+.da-messagesWrapper .container-1YxwTf {
   padding-top: 10px;
   margin: 10px;
   padding: 10px 0px 10px 0px;
@@ -631,44 +650,17 @@
 }
 /* .da-messages .da-divider {
   display: none !important;
-  } */
-  .da-guildsWrapper {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin: 20px 0px 20px 30px;
-    background: rgba(0, 0, 0, .5) !important;
-  }
+} */
+.da-guildsWrapper {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin: 20px 0px 20px 30px;
+  background: rgba(0, 0, 0, .5) !important;
+}
 
-  .channels-Ie2l6A {
-    /* background: rgba(0, 0, 0, .5) !important; Whoops, forgot its apart of the general settings. Am smart.*/
-    border-top-right-radius: 10px !important;
-    border-bottom-right-radius: 10px !important;
-    margin: 20px 0px !important;
-  }
-
-  /* width : 48%;
-  top: -100px !important;
-  border: 1px solid blue;
-  height: 150px;
-  float:right;
-  overflow-y:scroll; */
-  /* .da-guildsWrapper  {
-    background:#942911 !important;
-    /* color:white; */
-    /* top:30px; */
-    /* left: -10px; */
-    /* display: table; */
-    width : 500px !important;
-    height : 100px;
-    /* margin-bottom: 100px !important;
-    position: absolute; /* not relative anymore
-    z-index:5;
-    transform: translate(-10px, 30px);
-  }
-  .da-guilds {
-    width : 500px !important;
-    position: absolute;
-  }
-  .da-guild {
-    display: inline !important;
-    } */
+.channels-Ie2l6A {
+  /* background: rgba(0, 0, 0, .5) !important; Whoops, forgot its apart of the general settings. Am smart.*/
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  margin: 20px 0px !important;
+}
