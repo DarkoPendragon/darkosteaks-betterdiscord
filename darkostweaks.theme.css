@@ -1,7 +1,7 @@
 //META{"name":"Darkos Tweaks Redone","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"5.2","website":"https://discord.gg/FKYrX4X"}*//{}
 @import url('https://fonts.googleapis.com/css?family=Rokkitt');
 @import url('https://fonts.googleapis.com/css?family=Alegreya');
-@@import "";
+@import url("https://darkopendragon.github.io/darkostweaks-betterdiscord/SourceCSS/darkostweaks.css");
 :root {
   /* Backgrounds */
   --mainback: center/cover no-repeat url(https://i.imgur.com/slFxzVi.jpg); /* Sets the background property of the main background. */
