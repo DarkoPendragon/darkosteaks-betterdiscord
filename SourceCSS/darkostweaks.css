@@ -1,0 +1,614 @@
+/* Cusotm Font */
+::-webkit-input-placeholder, body, button, input, select, textarea {
+    font-family: 'Rokkitt', serif;
+}
+/* Basic Animations */
+@keyframes float {
+  0%, 100% {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .6);
+    transform: translatey(0)
+  }
+
+  50% {
+    box-shadow: 0 25px 15px 0 rgba(0, 0, 0, .2);
+    transform: translatey(-20px)
+  }
+}
+@keyframes sidetoside {
+  0%, 100% {
+    transform: translatex(6px)
+  }
+
+  50% {
+    transform: translatex(-6px)
+  }
+}
+@keyframes rainbow {
+  from {
+    -webkit-filter: hue-rotate(0);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+/* Transparent Backgrounds & Tweaks: NMLZ */
+.bda-dark,
+.da-appMount,
+.da-app,
+.theme-dark .container-3gCOGc,
+.da-friendsTable,
+.app,
+.app .flex-vertical .theme-dark,
+.da-layer,
+.da-layers,
+.da-guildsWrapper,
+.da-base,
+.da-guilds,
+.da-wrapperMutedText .da-wrapper,
+.da-horizontalReverse,
+.da-directionRowReverse,
+.da-justifyStart,
+.da-alignStretch,
+.da-scrollerWrap,
+.da-contentColumnDefault,
+.da-standardSidebarView,
+.da-sidebarRegion,
+.da-contentRegion,
+.search-bar,
+.search,
+.da-selector,
+.da-contentColumn,
+.da-chat,
+.da-messages,
+.da-firefoxFixScrollFlex,
+.da-topic,
+.da-titleText,
+.da-messagesWrapper,
+.da-message .da-content,
+.da-message .da-markup, .da-message .da-container,
+.da-userPopout,
+.da-keybindGroup {
+  background: 0 !important;
+}
+.da-members, .da-messages, .da-chat form {
+  background: rgba(0, 0, 0, .3) !important;
+}
+
+.da-guilds, .da-channels, .da-titleBar, .da-members, .da-titleWrapper .da-headerBar, .da-gameLibrary, .da-container .da-friendsTable, .da-headerBar  {
+  background: rgba(0, 0, 0, var(--generaltransparency)) !important;
+}
+.chat-3bRxxu {
+  background: rgba(0, 0, 0, var(--chattransparency)) !important;
+}
+
+/* Makes switch's and cards a bit more visable */
+.da-switch {
+  background: rgba(155, 155, 155, .4) !important
+}
+.da-card, .da-checked, .da-checkbox {
+  background: rgba(2, 2, 2, .2) !important;
+  border-radius: 0px !important;
+}
+
+/* Scroller  */
+.da-scrollerWrap .da-scroller::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .9) !important;
+  border: 2px solid rgba(0, 0, 0, .1) !important;
+}
+.da-scrollerWrap .da-scroller::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, .1) !important;
+  border: none !important;
+}
+/* END Transparent Backgrounds & Tweaks */
+
+/* Set Main Backgrounds */
+.da-appMount {
+  /* z-index: 200 !important; */
+  background: var(--mainback) !important;
+  /* filter: blur(5px); */
+}
+.app::before {
+    content: "";
+    opacity: 1 !important;
+    position: fixed !important;
+    background: var(--mainback);
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: 100% !important;
+    filter: blur(var(--backblur));
+}
+.da-userPopout {
+  background: var(--userpop) !important;
+}
+.da-embedInner {
+  background: var(--embedback) !important
+}
+/* END Set Backgrounds */
+/* TextArea */
+.theme-dark .da-chat form {
+  margin: 0px;
+}
+.da-innerNoAutocomplete, .da-innerAutocomplete {
+  border-radius: var(--textborderrad) !important;
+  /* border: var(--textborder); */
+  margin: 0px 10px 0px 10px !important;
+  background: rgba(75, 75, 75, .2) !important
+}
+.da-innerAutocomplete {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+/* #bda-qem, #bda-qem-twitch, #bda-qem-favourite, #bda-qem-emojis {
+  color: #fff !important
+}
+#bda-qem-favourite-container, #bda-qem-twitch, #bda-qem, .da-emojiPicker {
+  background: rgba(0, 0, 0, .2);
+  /* background: rgb(100,100,100) */
+} */
+.da-isMentionedCozy:after {
+  background: rgba(250,166,26,.2) !important;
+  border-left: 6px solid var(--mentioncolor);
+  border-radius: 100% 0% 0% 100% !important;
+  top: 0px !important;
+  bottom: 0;
+  content: " ";
+  left: -6px;
+  position: absolute;
+  width: 2px;
+}
+.da-headerCozyMeta {
+  width: 100% !important;
+  /* text-align: center; */
+}
+.da-timestampCozy {
+  color: rgba(255, 255, 255, 0.8) !important;
+  float: right !important;
+  margin-right: 30px !important;
+}
+.da-headerCozyMeta .da-username {
+  float: left;
+}
+.da-channels {
+  border-right: 1px solid rgba(0, 0, 0, .2) !important;
+}
+.da-channels .da-nameDefaultText {
+  color: var(--textchannelnames);
+}
+.da-channels .da-nameMutedText {
+  color: rgba(200, 200, 200, 0.5);
+}
+.da-members {
+  border-left: 1px solid rgba(0, 0, 0, .2) !important;
+}
+.da-headerBar {
+  border-bottom: 1px solid rgba(0, 0, 0, .2) !important;
+}
+.da-guildInner {
+  transition: all .5s ease-in !important;
+  border-radius: 5px !important;
+}
+.da-selected .da-guildInner {
+  transform: translatex(3px) !important;
+}
+.da-member:hover .da-content {
+  transition: all 1s ease-in;
+  background-color: var(--secondarycolor) !important;
+}
+.da-member:not(:hover) .da-content {
+  transition: all 1s ease-in;
+}
+.da-channels .da-content {
+  transition: all .4s ease-in;
+}
+.da-channels .da-content:hover {
+  color: var(--textchannelnames);
+  background-color: rgba(114, 137, 218, .5) !important;
+}
+.da-channels .da-contentSelectedText {
+  color: var(--textchannelnames);
+  background: rgba(114, 137, 218, .7) !important;
+  transition: all .2s ease-in;
+}
+.da-nameUnreadText {
+  color: var(--unreadtext) !important;
+}
+.da-unreadBar {
+  font-family: sans-serif;
+  background-color: var(--secondarycolor);
+}
+/* TextChatArea */
+.da-message .da-avatar .da-image {
+  border-radius: 5px;
+}
+.da-member .da-wrapper {
+  border-radius: 5px !important;
+}
+/* Saw another theme do something like this, can't remember who... Think it was in the BD server.
+ * Tried to redo it but still not as good.  */
+.wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3 {
+  margin-bottom: 10px !important;
+  z-index: 10;
+  right: 25px !important;
+  left: 0 !important;
+}
+.iconDefault-3Gr8d2, .iconHovered-2L3-fB, .iconCollapsed-3hFp_8, .iconHovered-2L3-fB, .iconHoveredCollapsed-3caIIZ, .iconMuted-1HVBGH {
+  content: "" !important;
+  display: none !important;
+}
+.nameDefault-2DI02H::before, .nameHovered-1gxhWH:before, .nameCollapsed-34uFWo::before, .nameHovered-1gxhWH::before, .nameHoveredCollapsed-2orEWB::before, .nameMuted-1MCOt4::before {
+  content: '' !important;
+  z-index: -1;
+  display: var(--beforesudisplay);
+  position: absolute !important;
+  right: 25px !important;
+  left: 0 !important;
+  border-bottom: 20px solid var(--customcatcolor) !important;
+  border-right: 25px solid rgba(0,0,0,0) !important;
+}
+.nameDefault-2DI02H, .nameHovered-1gxhWH, .nameCollapsed-34uFWo, .nameHoveredCollapsed-2orEWB, .nameHovered-1gxhWH, .nameMuted-1MCOt4 {
+  content: "" !important;
+  z-index: 3 !important;
+  color: var(--catname) !important;
+  font-size: 16px !important;
+}
+.nameCollapsed-34uFWo, .nameMuted-1MCOt4 {
+  color: var(--catnamecollapsed) !important;
+}
+/* Pinned Messages */
+.da-messagesPopoutWrap {
+  background: rgba(0, 0, 0, .4) !important;
+}
+.da-messagesPopoutWrap .da-header {
+  background: rgba(0, 0, 0, .6) !important;
+  border-bottom: var(--generalborders) !important;
+}
+.da-messagesPopoutWrap .da-messageGroupWrapper {
+  border-radius: 1px !important;
+  background: rgba(0, 0, 0, .7) !important;
+}
+/* Markup fix */
+.da-markup {
+  font-family: 'Alegreya' !important;
+  color: rgba(250,250,250,.9) !important;
+}
+/* END Extra Text, Member Areas */
+
+/* Popouts */
+.da-popouts {
+  background: rgba(0, 0, 0, .4) !important;
+}
+
+/* User Pop */
+.da-userPopout .da-role>.da-roleName {
+  transition: all .3s ease-in !important;
+  opacity: 0;
+  width: 0px;
+}
+.da-userPopout .da-role:hover>.da-roleName {
+  opacity: 1;
+  width: 100%;
+}
+.da-userPopout .da-role:not(:hover)>.da-roleName {
+  transition-delay: 2s !important;
+}
+.da-userPopout .da-mask {
+  border-radius: 0!important;
+  -webkit-mask: none!important;
+  mask: none!important;
+}
+.da-userPopout .da-popout {
+  height: 200px;
+  width: 250px;
+}
+.da-headerNameWrapper {
+  display: none;
+}
+.headerText-2sdzFM .username, .headerText-2sdzFM .discriminator {
+  color: #fff !important;
+  font-size: 19px;
+  font-weight: 600;
+}
+.headerText-2sdzFM .discriminator {
+  display: none;
+}
+.headerText-2sdzFM, .da-headerText {
+  z-index: 90 !important;
+}
+.da-statusProfile.da-online, .da-statusProfile.da-dnd, .da-statusProfile.da-idle, .da-statusProfile.da-offline {
+  height: 35px;
+  z-index: -100 !important;
+  border: 0 !important;
+  position: static;
+  border-radius: 0 !important;
+}
+.da-userPopout .da-headerTop {
+  padding-top: 0;
+}
+
+/* Probably don't need all the + selectors buuuuuuuuut ye. */
+.da-headerNormal, .da-headerNormal+.da-body, .da-headerNormal+.da-body+.da-footer,
+.da-headerPlaying, .da-headerPlaying+.da-body,.da-headerPlaying+.da-body+.da-footer,
+.da-headerStreaming+.da-body, .da-headerStreaming+.da-body+.da-footer {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+.da-headerSpotify, .da-headerSpotify+.da-body, .da-headerSpotify+.da-body+.da-footer {
+  background: rgba(0, 100, 0, 0.5) !important;
+}
+.da-quickMessage {
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+.da-autocomplete, .da-autocompleteInner, .da-resultsGroup, .da-popout .da-container {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+.da-selectorSelected {
+  background: rgba(114, 137, 218, 0.4) !important;
+}
+.da-resultsGroup .da-option {
+  transition: all .3s ease-in !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+.da-resultsGroup .da-option:hover {
+  background: rgba(114, 137, 218, 0.4) !important;
+}
+.da-resultsGroup .da-option::after  {
+  background: 0 !important;
+}
+
+/* Profile Popout */
+.da-topSectionNormal {
+  background: center/cover no-repeat var(--normalback) !important;
+}
+.da-topSectionPlaying {
+  background: center/cover no-repeat var(--playingback) !important;
+}
+.da-topSectionSpotify {
+  background: center/cover no-repeat var(--spotifyback) !important;
+}
+.da-topSectionStreaming {
+  background: center/cover no-repeat var(--streamingback) !important;
+}
+/* Search Area */
+.search-results-wrap {
+  background: 0 !important;
+}
+.search-results-wrap .search-header {
+  background: rgba(0, 0, 0, 0.9) !important;
+  border: var(--generalborders);
+}
+.search-results-wrap .search-result:before, .search-results-wrap .search-result:after {
+  background: 0 !important;
+}
+.search-results-wrap .search-result .search-result-message.hit {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+.search-results-wrap .channel-separator .channel-name {
+    background: 0 !important;
+}
+/* END Popouts */
+
+/* Custom Friends Tab */
+.da-friendsRow, .da-friendsRow .avatar-small, .da-friendsColumn .da-nameTag,
+.da-friendsRow .da-friendsColumnStatus,
+.da-friendsRow .da-iconSizeSmall,
+.da-friendsRow .da-friendsColumn .da-friendsColumnGuilds {
+  transition: all 1s !important;
+  overflow: visible !important;
+  background-size: cover !important;
+}
+.da-friendsRow:hover {
+  height: 90px !important;
+  border-radius: 0px !important;
+  background: var(--friendshover) !important;
+}
+.da-friendsRow:hover .avatar-small {
+  width: 75px !important;
+  height: 75px !important;
+  border: 1px solid var(--primarycolor) !important;
+  border-radius: 5px !important;
+  background-size: cover !important;
+}
+.da-friendsRow:hover .da-nameTag {
+  margin-top: -25px !important;
+}
+.da-friendsRow:hover .da-friendsColumnStatus {
+  margin-left: -115px !important;
+  margin-top: 20px !important;
+}
+.da-friendsRow:hover .da-friendsColumn .da-friendsColumnGuilds {
+  margin: 0 !important;
+}
+.da-friendsRow:hover .da-iconSizeSmall {
+  opacity: 1 !important;
+  width: 70px !important;
+  height: 70px !important;
+  border: 1px solid var(--secondarycolor) !important;
+  border-radius: 5px !important;
+  background-size: cover !important;
+  left: 20px !important;
+}
+.da-friendsRow .da-friendsColumnActions .da-friendsAction {
+  transition: all 1s !important;
+}
+.da-friendsRow:not(:hover) .da-friendsColumnActions .da-friendsAction {
+  visibility: hidden !important;
+  transition: all 1s !important;
+  background-size: 2px 2px !important;
+  width: 0px !important;
+  height: 0px !important;
+}
+.da-friendsRow:hover .da-friendsColumnActions .da-friendsAction {
+  width: 50px !important;
+  height: 50px !important;
+  background-size: 35px 35px !important;
+}
+.da-friendsRow:hover .da-friendsColumnActions .da-friendsAction.da-friendsActionVideoCall {
+  background-color: rgba(100, 255, 230, 0.5) !important
+}
+.da-friendsRow:hover .da-friendsColumnActions .da-friendsAction.da-friendsActionVoiceCall {
+  background-color: rgba(0, 255, 40, 0.5) !important
+}
+.da-friendsRow:hover .da-friendsColumnActions .da-friendsAction.da-friendsActionRemove {
+  background-color: rgba(255, 0, 0, 0.8) !important
+}
+/* END Custom Friends Tab */
+
+/* Game/Library Tabs */
+.da-table .da-stickyHeader, .da-root .da-libraryHeader, .root-1BQpZw, .browseWrapper-2Qy6vG .da-momentum {
+  background-color: rgba(0, 0, 0, 0.5) !important
+}
+
+/* END Game/Library Tabs */
+
+/* Animations */
+  /* Float */
+.da-userPopout, .root-SR8cQa {
+  animation: float var(--float-speed) ease-in-out infinite
+}
+/* END Animations */
+
+/* Random Stuff */
+.da-accountDetails .discriminator {
+  font-size: 0px;
+}
+.da-accountDetails .discriminator::before {
+  font-size: 10px !important;
+  display: static !important;
+  content: "Darko Magic v5" !important
+}
+.da-wordmark svg path {
+  display: none;
+}
+.da-wordmark svg {
+  background: center/contain no-repeat url(https://i.imgur.com/66lu8lk.png) !important;
+}
+.da-titleBar {
+  border-radius: 0px !important;
+  background: transparent !important;
+}
+.da-botTag {
+  background-color: var(--tagbackground);
+  color: var(--tagcolor)
+}
+.root-SR8cQa {
+  width: var(--rootwidth);
+  height: var(--rootheight)
+}
+#discord-a {
+  /* animation: sidetoside 12s ease-out infinite;
+  mix-blend-mode: exclusion; */
+  display: none;
+}
+.da-homeIcon {
+  mix-blend-mode: color-dodge;
+  background: center/cover no-repeat url(https://i.imgur.com/VgOxIl0.png) !important;
+  background-size: 125% !important;
+}
+/* END Random Stuff */
+
+
+/* Settings Areas */
+  /* Hover item animations */
+.da-sidebar .da-notSelected:not(:hover), #bd-settings-sidebar .ui-tab-bar-item:not(:hover) {
+  transition: all 1.2s !important;
+  transform: scale(1)
+}
+.da-sidebar .da-notSelected:hover, #bd-settings-sidebar .ui-tab-bar-item:hover {
+  transition: all 1.2s !important;
+  transform: scale(1.1)
+}
+.da-sidebar .da-selected, .theme-dark #bd-settings-sidebar .ui-tab-bar-item.selected{
+  transform: scale(1.1) !important
+}
+  /* END Hover Animation */
+.da-keybindGroup {
+  background: 0 !important;
+  margin-bottom: 20px;
+}
+.da-keybindGroup:before, .user-settings-games .game::before, .da-emojiRow::before, .da-card~.da-member::before, .da-inviteSettingsInviteRow::before, .guild-settings-banned-user::before  {
+  background: rgba(20, 20, 20, 0.5) !important;
+  border: 1px solid rgba(100, 100, 100, 0.3) !important;
+  border-radius: 0;
+  bottom: -1px;
+  content: "";
+  left: -20px;
+  position: absolute;
+  right: -20px;
+  top: 0;
+}
+.Select-menu-outer {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+/* Techniclly settings, so I'll putting it here. */
+.da-menu {
+  background: rgba(0,0,0,.7) !important
+}
+/* This took me longer than it should have... */
+.da-sidebar .da-header {
+  padding: 1px 1px 1px 1px;
+  position: relative;
+  z-index: 100;
+  color: #fff !important;
+  margin-bottom: 10px;
+}
+.da-sidebar .da-header::after {
+  content: '';
+  z-index: -95;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 25px solid rgb(114, 137, 218) !important;
+  border-right: 40px solid rgba(0,0,0,0) !important;
+}
+.sidebarRegion-VFTUkN {
+  border-radius: 20px;
+  margin: 30px 30px 30px 200px;
+}
+.contentRegion-3nDuYy {
+  border-radius: 20px;
+  margin: 30px 200px 30px 20px;
+}
+#user-settings, .da-layer .da-standardSidebarView {
+  margin-left: 0px;
+  background: var(--settingsbackground) !important;
+}
+#user-settings div .da-standardSidebarView, #user-settings div .da-sidebarRegion, #user-settings div .da-contentRegion, #bd-settingspane-container, .da-layer .da-standardSidebarView .da-sidebarRegion, .da-layer .da-standardSidebarView .da-contentRegion {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+/* END Settings Areas */
+
+/* Un-Cat */
+/* These are all apart of testing new things out and will eventually go to their right places. */
+.da-messagesWrapper .container-1YxwTf {
+  padding-top: 10px;
+  margin: 10px;
+  padding: 10px 0px 10px 0px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.chat-3bRxxu, .da-gameLibrary, .theme-dark .container-3gCOGc, .root-1BQpZw {
+  border-radius: 10px;
+  margin: 20px 20px;
+}
+/* .da-messages .da-divider {
+  display: none !important;
+} */
+.da-guildsWrapper {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin: 20px 0px 20px 30px;
+  background: rgba(0, 0, 0, .5) !important;
+}
+
+.channels-Ie2l6A {
+  /* background: rgba(0, 0, 0, .5) !important; Whoops, forgot its apart of the general settings. Am smart.*/
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  margin: 20px 0px !important;
+}
