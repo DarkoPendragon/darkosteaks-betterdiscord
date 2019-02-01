@@ -1,4 +1,4 @@
-//META{"name":"Darkos Tweaks Redone","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"5.2","website":"https://discord.gg/FKYrX4X"}*//{}
+//META{"name":"Darkos Tweaks Redone","description":"A light and basic theme thrown together by Darko with customizable backgrounds and colors. If you need any help, or just want to chat, swing by my Discord server: https://discord.gg/FKYrX4X","author":"DarkoPendragon","source":"https://github.com/DarkoPendragon/darkostweaks-betterdiscord","version":"6","website":"https://discord.gg/FKYrX4X"}*//{}
 @import url('https://fonts.googleapis.com/css?family=Rokkitt');
 @import url('https://fonts.googleapis.com/css?family=Alegreya');
 @import url("https://darkopendragon.github.io/darkostweaks-betterdiscord/SourceCSS/darkostweaks.css");
@@ -45,8 +45,4 @@
   --chattransparency: .3; /* Sets the transparency of the main chat area. */
   --primarycolor: #99aab5; /* Sets the primary color used within the theme for some elements. */
   --secondarycolor: #7289da; /* Sets the secondary color used within the theme for some elements. */
-
-  /* Misc Settings */
-  --rootwidth: inherit; /* Sets the width of the root class (when you click on "View Profile"). */
-  --rootheight: inherit; /* Sets the height of the root class (when you click on "View Profile"). */
 }
