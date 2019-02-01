@@ -317,7 +317,7 @@
 .headerText-2sdzFM, .da-headerText {
   z-index: 90 !important;
 }
-.da-userPopout .da-statusProfile.da-online, .da-userPopout.da-statusProfile.da-dnd, .da-userPopout.da-statusProfile.da-idle, .da-userPopout.da-statusProfile.da-offline {
+.da-userPopout .da-statusProfile.da-online, .da-userPopout .da-statusProfile.da-dnd, .da-userPopout .da-statusProfile.da-idle, .da-userPopout .da-statusProfile.da-offline {
   height: 35px;
   z-index: -100 !important;
   border: 0 !important;
