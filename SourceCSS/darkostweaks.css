@@ -338,9 +338,9 @@
   transition-delay: 2s !important;
 }
 .da-userPopout .da-mask {
-  border-radius: 0!important;
-  -webkit-mask: none!important;
-  mask: none!important;
+  border-radius: 0 !important;
+  -webkit-mask: none !important;
+  mask: none !important;
 }
 .da-userPopout .da-popout {
   height: 200px;
@@ -351,8 +351,9 @@
 }
 .headerText-2sdzFM .username, .headerText-2sdzFM .discriminator {
   color: #fff !important;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 600;
+  overflow: hidden !important;
 }
 .headerText-2sdzFM .discriminator {
   display: none;
@@ -360,7 +361,7 @@
 .headerText-2sdzFM, .da-headerText {
   z-index: 90 !important;
 }
-.da-statusProfile.da-online, .da-statusProfile.da-dnd, .da-statusProfile.da-idle, .da-statusProfile.da-offline {
+.da-userPopout .da-statusProfile.da-online, .da-statusProfile.da-dnd, .da-statusProfile.da-idle, .da-statusProfile.da-offline {
   height: 35px;
   z-index: -100 !important;
   border: 0 !important;
