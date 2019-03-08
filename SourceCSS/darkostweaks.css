@@ -42,7 +42,7 @@
 .app .flex-vertical .theme-dark,
 .da-layer,
 .da-layers,
-.da-guildsWrapper,
+.wrapper-1Rf91z,
 .da-base,
 .da-guilds,
 .da-wrapperMutedText .da-wrapper,
@@ -185,11 +185,11 @@
 .da-headerBar {
   border-bottom: 1px solid rgba(0, 0, 0, .2) !important;
 }
-.da-guildInner {
+.wrapper-2lTRaf {
   transition: all .5s ease-in !important;
   border-radius: 5px !important;
 }
-.da-selected .da-guildInner {
+.da-selected .wrapper-2lTRaf {
   transform: translatex(3px) !important;
 }
 .da-member:hover .da-content {
@@ -486,7 +486,7 @@
 .da-accountDetails .discriminator::before {
   font-size: 10px !important;
   display: static !important;
-  content: "DarkoTweaks v6" !important
+  content: "Darko Magic v5" !important
 }
 .da-wordmark svg path {
   display: none;
@@ -603,7 +603,7 @@
 /* .da-messages .da-divider {
   display: none !important;
 } */
-.da-guildsWrapper {
+.wrapper-1Rf91z {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   margin: 20px 0px 20px 30px;
